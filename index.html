@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2018 by anonymous (http://jsbin.com/gefecehohu/2/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <title>textify:Prank Texts</title>
+<style id="jsbin-css">
+body {                                
+background-color:#57dbdb;
+  color: blue; text-align:center;
+  margin:17px;
+}
+
+
+h1{
+text-align: center
+}
+
+
+h1 {
+color: white
+}
+
+
+#life{
+  
+color:red 
+  
+}
+ 
+#allTitle{
+  color: Black;
+}
+</style>
+</head>
+<body>
+ 
+  
+  
+  
+ <div id="allTitles"> 
+  <h1> Textify </h1>
+  <h2 id='life'>Send prank texts to your friend</h2>
+  <h3>send the text to the victim</h3>
+ </div>
+ <div class="form-inline"
+      <div class="input">
+  <input id="phone" class="form-control" placeholder=" Hacker Phone Number" required>
+   
+  <input id="message" class="form-control" placeholder=" prank text" required>
+
+  <button id="submit" type="button" class="btn btn-danger">Submit</button>
+  
+  </div>
+  
+  
+  
+  <script id="jsbin-javascript">
+$("#submit").click(function(){
+  
+var number = $('#phone').val();
+          var msg = $('#message').val();
+          $.get('http://mrpresident.io/custommessage',{"phone":number, "message":msg}, function()
+        {
+          alert("done successfully");
+        });
+});
+</script>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
+<footer>
+  
+  
+  
+  
+
+
+
+
+</html>
